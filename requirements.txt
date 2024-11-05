@@ -1,0 +1,8 @@
+datasets==3.0.1
+notebook==7.2.2
+ipywidgets==8.1.5
+python-dotenv==1.0.1
+chainlit
+openai==1.51.2
+requests==2.32.3
+dateparser==1.2.0
