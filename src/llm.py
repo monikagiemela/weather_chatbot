@@ -5,7 +5,7 @@ from src.sys_config import system_instruction
 
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-GPT_MODEL = "gpt-4o-mini" # "gpt-3.5-turbo" "gpt-3.5-turbo-0613" new model for function calling abilities
+GPT_MODEL = "gpt-4o-mini"
 
 messages = [
     {"role": "system", "content": system_instruction}
