@@ -70,11 +70,17 @@ This project is a weather chatbot designed to provide real-time weather informat
 
 ## **Project Structure**  
 ```plaintext  
-├── app.py                 # Main script to run the chatbot  
+├── run.py                 # Main script to run the chatbot  
 ├── requirements.txt       # List of dependencies for the project  
 ├── .env                   # File to store API keys  
 ├── README.md              # Documentation file  
-└── utils/                 # Helper functions (e.g., API calls, formatting responses)  
+└── app/                   # Core application logic and utilities  
+    ├── __init__.py        # Initialization file for the app package  
+    ├── llm.py             # Handles interactions with the OpenAI model (GPT-4o-mini)  
+    ├── sys_config.py      # Manages system configurations (e.g., environment variables)  
+    ├── utils.py           # Contains helper functions for the chatbot (e.g., formatting, API calls)  
+
+
 ```  
 
 ---

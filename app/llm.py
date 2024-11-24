@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from src.sys_config import system_instruction
+from app.sys_config import system_instruction
 
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

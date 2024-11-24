@@ -1,9 +1,9 @@
 import openai
 from dotenv import load_dotenv
 import chainlit as cl
-from src.llm import chat_completion_request, messages, functions
-from src.sys_config import conv_prompt
-from src.utils import handle_weather_query
+from app.llm import chat_completion_request, messages, functions
+from app.sys_config import conv_prompt
+from app.utils import handle_weather_query
 import json
 import os
 
