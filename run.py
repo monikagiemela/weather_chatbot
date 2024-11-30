@@ -1,4 +1,3 @@
-import openai
 from dotenv import load_dotenv
 import chainlit as cl
 from app.llm import chat_completion_request, messages, functions
@@ -10,8 +9,7 @@ import os
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-
-import json
+creator_name = "Monika"
 
 def execute_function_call(assistant_message):
     """
@@ -71,6 +69,12 @@ def get_natural_response(content, user_message):
     messages.append({"role": "assistant", "content": new_assistant_message})
     print(f"\n>>>> natural response: \n{new_assistant_message}")
     return new_assistant_message
+
+# Send an introductory message as soon as the chat window is opened
+@cl.on_chat_start
+async def send_intro():
+    intro_message = f"Hi! 😊 I'm a weather chatbot created by {creator_name}. I can help you with weather information for any location you need. Ask me anything about the weather! 🌤️"
+    await cl.Message(content=intro_message).send()
 
 # Main function
 @cl.on_message

@@ -57,7 +57,7 @@ This project is a weather chatbot designed to provide real-time weather informat
 4. **Run the Application:**  
    Execute the main script to start the chatbot:  
    ```bash  
-   python app.py  
+  chainlit run -w run.py  
    ```  
 
 5. **Interact with the Chatbot:**  
