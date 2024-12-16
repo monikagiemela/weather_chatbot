@@ -38,7 +38,7 @@ This project is a weather chatbot designed to provide real-time weather informat
 1. **Clone the Repository:**  
    ```bash  
    git clone https://github.com/monikagiemela/weather_chatbot.git 
-   cd weather-chatbot  
+   cd weather_chatbot  
    ```  
 
 2. **Install Dependencies:**  
